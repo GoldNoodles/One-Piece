@@ -1,0 +1,185 @@
+/* Reset Css */
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.text-white{
+    color:white !important;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+1.Từ ngoài vào trong
+2.Từ trên xuống dưới
+3.Từ tổng quan đến chi tiết
+*/
+
+/* 
+1. vị trí
+2. Kichs thước
+3.Màu sắc
+4.Kiểu dáng(chữ, hình....)
+ */
+
+.wrapper{
+    width: 960px;
+
+}
+.header{
+    height: 50px;
+    background: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+     /* nổi lên */
+    z-index: 1;
+    position: fixed;
+}
+/* menu */
+.menu{
+    display: inline-block;
+}
+
+.menu li{
+    position: relative;
+    display: inline-block;
+}
+.menu  li > a{
+    color: white;
+    text-transform: uppercase;
+}
+.menu .submenu ul > li{
+    display: inline-block;
+}
+.menu ul li a{
+    text-decoration: none;
+    padding:0 24px;
+    line-height: 50px;
+    display: block;
+}
+.menu > ul li:hover > a,
+.menu .submenu li:hover a{
+    color: black;
+    transition: 1.02s ease-in-out;
+    -o-transition: 1.02s ease-in-out;
+    background-color: white;
+}
+.menu .submenu {
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    background: gray;
+    box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+}
+.menu .submenu a{
+    color: white;
+    padding: 0 12px;
+    line-height: 38px;
+}
+.menu ul li:hover .submenu{
+    display: block;
+}
+/* ket menu */
+.header .search {
+    float: right;
+    line-height: 50px;
+    font-size: 20px;
+    padding:0 21px;
+    color: white;
+}
+.search .icons:hover{
+    color: black;
+    font-size: 25px;
+    transition: 0.72s ease-in;
+    cursor: pointer;
+}
+/* phần ảnh có chữ */
+.nav{
+    margin-top: 50px;
+    min-height: 500px;
+    background: url('../IMG/wallhaven-r79em1_1920x1080.png') center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+}
+.text-content{
+    position: absolute;
+    bottom: 48px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.text-heading{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.text{
+
+}
+
+.content{
+    min-height: 500px;
+    margin-top: 50px;
+}
+.content .section{
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 64px 0;
+}
+.content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
+.content .section-subheading{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    /* trong suot */
+    opacity: 0.6;
+}
+.content .about-content{
+    text-align: justify;
+    line-height: 1.4;
+}
+.member img{
+    width: 200px;
+    border-radius: 5px;
+}
+.content .member p{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.content .member{
+    margin-top: 50px;
+    overflow: hidden;
+}
+.content .member-item{
+    float: left;
+    margin-left: 50px;
+}
+.content .tv-section{
+    background: #000;
+}
+.content table{
+    background-color: white;
+    height: 500px;
+    width:800px;
+}
+.content table th{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 0px black;
+}
+.footer{
+
+}
